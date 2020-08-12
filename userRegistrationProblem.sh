@@ -1,11 +1,11 @@
 #!/bin/bash -x
 
-read -p "Enter a Email : " email
-pattern="^[a-zA-Z0-9]{3,15}(|[.|_|%|+|-]?[a-zA-Z0-9]+)@[a-zA-Z0-9]{1,15}(.[a-z]{2,4})(|[.]?[a-z]{2,4})$"
+read -p "Enter a mobile number : " mobile
+pattern="^[0-9]{2}[ ][0-9]{10}$"
 
-if [[ $email =~ $pattern ]]
+if [[ $mobile =~ $pattern ]]
 then
-	echo "email is Valid"
+	echo "mobileNumber is Valid"
 else
-	echo "email is Invalid"
+	echo "mobileNumber is Invalid"
 fi
